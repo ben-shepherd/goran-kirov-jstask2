@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>JS task</title>
+        <script src="js/task.js"></script>
+        <style>
+            div#list ul {
+                list-style-type:none;
+            }
+            div#list li {
+                margin:0;
+                padding:0;
+                display:block;
+                float:left;
+                padding:0 25px;
+                margin:2px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <form id="form">
+            <p>Red</p>
+            <input type="text" name="red" placeholder="0-255" id="red">
+            <p>Green</p>
+            <input type="text" name="green" placeholder="0-255" id="green">
+            <p>Blue</p>
+            <input type="text" name="blue" placeholder="0-255" id="blue">
+            <p>&nbsp;</p>
+            <button type="submit">Generate</button>
+            <button type="button" onclick="setRandomAndRenderList()">Random Colors</button>
+        </form>
+
+        <div id="list"></div>
+    </body>
+</html>
